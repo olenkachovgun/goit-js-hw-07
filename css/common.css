@@ -18,6 +18,21 @@ ul {
   padding: 0;
   list-style: none;
 }
+button {
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+input {
+  outline: transparent;
+  height: 40px;
+}
 /* index.html */
 .main-list {
   margin: 50px;
@@ -55,11 +70,11 @@ ul {
 }
 .btn-goback,
 .btn {
+  border-radius: 8px;
   display: block;
   color: #fafafa;
   padding: 10px;
   width: 100px;
-  border-radius: 8px;
   text-decoration: none;
   background-color: #4e75ff;
   border-bottom: 1px solid #e7e9fc;
@@ -115,8 +130,6 @@ ul {
   flex-direction: column;
 }
 .login-form input {
-  outline: transparent;
-  height: 40px;
   margin-bottom: 8px;
 }
 .login-form label {
@@ -130,11 +143,42 @@ ul {
   color: #2e2f42;
 }
 .btn {
-  border: none;
   padding: 8px 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   margin-top: 8px;
+}
+/* task - 5 */
+.change-color {
+  width: 148px;
+}
+/* task - 6 */
+#controls,
+#boxes {
+  background-color: #f6f6fe;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  border-radius: 8px;
+  width: 486px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+#controls button {
+  padding: 8px;
+  width: 120px;
+}
+button[data-create] {
+  background-color: #4e75ff;
+}
+button[data-destroy] {
+  background-color: #ff4e4e;
+}
+#controls input {
+  padding: 8px;
+  width: 150px;
+  border: 1px solid #808080;
+  border-radius: 8px;
 }
